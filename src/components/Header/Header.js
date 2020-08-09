@@ -4,10 +4,16 @@ import "./Header.css";
 export default function Header() {
   return (
     <nav>
-      <label className="logo">Design</label>
+      <input type="checkbox" id="check" />
+      <label for="check" className="checkbtn">
+        <i className="fas fa-bars"></i>
+      </label>
+      <label className="logo">MyWebsite</label>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a className="active" href="#">
+            Home
+          </a>
         </li>
         <li>
           <a href="#">About</a>
